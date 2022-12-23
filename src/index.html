@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Use some cool fonts from Google 😀-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
     <title>uploadFile</title>
 </head>
+
 <body>
-    
-<h1>asd</h1>
+    <body onpageshow="hideElements()"> 
+    <div class="mainContainer">
+        <h1>Welcome!</h1>
+        <h3>This program uploads a file from local</h3>
+        <div class="mainForm">
+            <input id="inputFile" type="file" autocomplete="off" title="Click to upload">
+            <img class="imgCheckFile" id="imgCheckFile" src="/img/check_circle_black_24dp.svg" width="25" alt="">
+        </div>
+        <div class="btnCheck">
+            <button id="btnCheckFile" type="button">Check file</button>
+        </div>
+    </div>
     <script src="/src/app.js"></script>
 </body>
+
 </html>
